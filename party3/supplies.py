@@ -3,8 +3,12 @@ import imp
 import os
 from party3.celery import celery
 
-@celery.task
 def notify(msg):
+    'wrap notify_async'
+    notify_async.delay(msg)
+
+@celery.task
+def notify_async(msg):
     'notify concerned parties of a change in status'
     print msg
 

@@ -6,7 +6,7 @@ Make sure you know what your third-party services are up to.
 
 Party3 comes with some services to get you started, here's a list:
 
- - none so far! But I'm adding them.
+ - Github (through status.github.com)
 
 ### Configuration
 
@@ -41,3 +41,9 @@ Then just restart your worker/scheduler processes, and it will Just Work(TM).
 This project is designed, in a fit of utter irony, to be deployed to Heroku.
 There's no web role, so to keep it in the free tier, just spin up a scheduler
 (but only one) and add workers if you need to.
+
+## Services
+
+### Github
+
+Checks the status of github, notifying if it's down.
