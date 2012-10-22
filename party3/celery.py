@@ -6,7 +6,7 @@ celery = Celery(
     'party3.celery',
     broker='redis://',
     backend='redis://',
-    include['party3.tasks']
+    include=['party3.supplies']
 )
 
 celery.conf.update(
